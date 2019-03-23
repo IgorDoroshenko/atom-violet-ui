@@ -6,19 +6,23 @@
 // Overrides: atom/tabs
 
 .tab-bar {
-  background-color: @tab-bar-background-color;
-  border-bottom: 1px solid @base-border-color;
+  background-color: #122F35;
+
+  .title {
+    text-align: center;
+  }
 
   .tab {
     color: @text-color;
     height: @tab-height;
     line-height: @tab-height;
     font-size: @font-size;
-    border-right: 1px solid @tab-border-color;
-    background-color: @tab-background-color;
+    border: 1px solid #DDC7A5;
+    background-color: #142032;
+    border-radius: 50px 50px 0 0;
     &.active {
       color: @text-color-selected;
-      background-color: @tab-background-color-active;
+      background-color: #0E2438;
     }
 
 
