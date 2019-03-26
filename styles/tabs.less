@@ -13,6 +13,7 @@
   }
 
   .tab {
+    padding-left: 15px;
     color: @text-color;
     height: @tab-height;
     line-height: @tab-height;
@@ -25,6 +26,10 @@
       background-color: #0E2438;
     }
 
+    &:hover {
+      background-color: #253143;
+      color: white;
+    }
 
     // Modified Icon (the circle) -------------------
     &.modified:not(:hover) .close-icon {

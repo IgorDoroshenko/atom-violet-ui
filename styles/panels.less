@@ -9,11 +9,24 @@
   background-color: @panel-heading-background-color;
 }
 
+.pane-item {
+  background: red;
+}
+
 .inset-panel {
   background-color: @inset-panel-background-color;
   .panel-heading {
     background-color: lighten(@inset-panel-background-color, 4%);
   }
+}
+
+.left .active.tab[data-type="TreeView"] {
+  background-color: #122F35;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom-width: 2px;
+  margin-bottom: 10px;
 }
 
 
@@ -24,4 +37,9 @@ atom-panel.modal {
   border: 1px solid @overlay-border-color;
   border-top: none;
   box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
+  background-color: #122F35;
+  .event.selected {
+    border: 1px solid;
+    background-color: #011D24;
+  }
 }
